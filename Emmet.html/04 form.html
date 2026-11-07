@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        body { max-width: 480px; margin: 30px auto; padding: 0 16px; font-family: Arial, sans-serif; }
+        div, fieldset { margin-bottom: 14px; }
+        label { display: block; font-weight: bold; margin-bottom: 4px; }
+        fieldset label { display: inline; font-weight: normal; margin-right: 12px; }
+        input[type="text"], input[type="email"], input[type="password"], select, textarea {
+            width: 100%; padding: 8px; box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Student Registration Form</h1>
+    <form action="#" method="post">
+        <div>
+            <label for="sid">Student ID</label>
+            <input type="text" name="sid" id="sid" required>
+        </div>
+        <div>
+            <label for="fullname">Full Name</label>
+            <input type="text" name="fullname" id="fullname" required>
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div>
+            <label for="pw">Password</label>
+            <input type="password" name="pw" id="pw" required>
+        </div>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female">
+            <label for="female">Female</label>
+        </fieldset>
+        <div>
+            <label for="course">Course</label>
+            <select name="course" id="course">
+                <option value="bsit">BSIT</option>
+                <option value="bscs">BSCS</option>
+                <option value="bsis">BSIS</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>Hobbies</legend>
+            <input type="checkbox" name="hobbies" id="reading" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="hobbies" id="gaming" value="gaming">
+            <label for="gaming">Gaming</label>
+            <input type="checkbox" name="hobbies" id="music" value="music">
+            <label for="music">Music</label>
+        </fieldset>
+        <div>
+            <label for="address">Address</label>
+            <textarea name="address" id="address" rows="3"></textarea>
+        </div>
+        <input type="submit" value="Register">
+    </form>
+</body>
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Enrolment Load</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      color: #111;
+      margin: 24px auto;
+      padding: 0 16px;
+      max-width: 1000px;
+    }
+
+    header { text-align: center; }
+    header h1 { margin: 0; font-size: 20px; }
+    header p { margin: 2px 0 0; font-size: 13px; }
+
+    .printed { text-align: right; font-size: 13px; margin: 10px 0 18px; }
+
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px 30px;
+      margin-bottom: 18px;
+    }
+    .info p { margin: 0; }
+    .big { font-size: 17px; font-weight: bold; }
+    .sig { border-bottom: 1px solid #111; display: inline-block; width: 240px; }
+
+    .units { display: flex; flex-wrap: wrap; gap: 6px 60px; margin: 0 0 8px 10px; }
+
+    .scroll { overflow-x: auto; }
+
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border: 1px solid #111; padding: 4px 6px; text-align: left; vertical-align: middle; }
+    th { text-transform: uppercase; font-size: 12px; }
+    .num { text-align: center; }
+
+    .fees {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 20px;
+      margin-top: 28px;
+    }
+    .fees table { width: 320px; }
+    .fees td { border: 0; padding: 5px 8px; }
+    .fees td:last-child { text-align: right; font-weight: bold; }
+    .fees tr.total td:first-child { text-align: right; font-weight: normal; }
+
+    .down { font-size: 17px; text-decoration: underline; margin-top: 12px; }
+
+    .advised { margin-top: 36px; }
+    .advised strong { margin-left: 40px; text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      .info { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>STUDENT ENROLMENT LOAD</h1>
+    <p>1st Sem, AY 2026-2027</p>
+  </header>
+
+  <p class="printed">Date and time printed: <strong>2026-8-25 11:31:45</strong></p>
+
+  <section class="info">
+    <p>Student ID: <span class="big">25-0574-693</span></p>
+    <p>Course / Major: <strong>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY / Web Technology Track</strong></p>
+
+    <p>Student name: <span class="big">BANTIAN, JERWIN BUCANOG</span></p>
+    <p>Curriculum Year: <strong>2025 - 2026</strong></p>
+
+    <p>Student type: <strong>Change Course</strong></p>
+    <p>Year: <strong>2</strong></p>
+
+    <p>Student's Signature: <span class="sig"></span></p>
+    <p>Parent's Signature: <span class="sig"></span></p>
+  </section>
+
+  <div class="units">
+    <span>Maximum units the student can take: <strong>20.0</strong></span>
+    <span>Total student load taken: <strong>17.0</strong></span>
+  </div>
+
+  <div class="scroll">
+    <table>
+      <thead>
+        <tr>
+          <th>Subject code</th>
+          <th>Subject title</th>
+          <th class="num">Lec. units</th>
+          <th class="num">Lab. units</th>
+          <th class="num">Total units</th>
+          <th class="num">Units taken</th>
+          <th>Section</th>
+          <th>Room</th>
+          <th>Schedule</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CC5</td>
+          <td>INFORMATION MANAGEMENT</td>
+          <td class="num">2.0</td><td class="num">1.0</td><td class="num">3.0</td><td class="num">3.0</td>
+          <td>CITCS 2E Group B</td>
+          <td>FLD<br>M306 (lab)</td>
+          <td>MW 12:50PM-2:10PM<br>MWF 11:30AM-12:50PM (lab)</td>
+        </tr>
+        <tr>
+          <td>PATHFit 4</td>
+          <td>OUTDOOR AND ADVENTURE ACTIVITIES</td>
+          <td class="num">2.0</td><td class="num">0.0</td><td class="num">2.0</td><td class="num">2.0</td>
+          <td>CITCS 2K Group B</td>
+          <td>Gym</td>
+          <td>MW 3:30PM-4:50PM</td>
+        </tr>
+        <tr>
+          <td>SCIENCE 100</td>
+          <td>SCIENCE, TECHNOLOGY AND SOCIETY</td>
+          <td class="num">3.0</td><td class="num">0.0</td><td class="num">3.0</td><td class="num">3.0</td>
+          <td>CITCS 2K Group B</td>
+          <td>S230</td>
+          <td>MWF 8:50AM-10:10AM</td>
+        </tr>
+        <tr>
+          <td>SOC SCI 101N</td>
+          <td>ETHICS</td>
+          <td class="num">3.0</td><td class="num">0.0</td><td class="num">3.0</td><td class="num">3.0</td>
+          <td>CITCS 2F Group B</td>
+          <td>FLD</td>
+          <td>TTHSAT 10:10AM-11:30AM</td>
+        </tr>
+        <tr>
+          <td>CIT14</td>
+          <td>WEB TECHNOLOGIES</td>
+          <td class="num">2.0</td><td class="num">1.0</td><td class="num">3.0</td><td class="num">3.0</td>
+          <td>CITCS 2G Group A</td>
+          <td>FLD<br>M307 (lab)</td>
+          <td>TTH 7:30AM-8:50AM<br>TTHSAT 8:50AM-10:10AM (lab)</td>
+        </tr>
+        <tr>
+          <td>SOC SCI 103N</td>
+          <td>THE CONTEMPORARY WORLD</td>
+          <td class="num">3.0</td><td class="num">0.0</td><td class="num">3.0</td><td class="num">3.0</td>
+          <td>AR II-1C-F</td>
+          <td>S321</td>
+          <td>TTHSAT 11:30AM-12:50PM</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <section class="fees">
+    <table>
+      <tr><td>Tuition Fee</td><td>14,875.00</td></tr>
+      <tr><td>Computer Lab Fee</td><td>7,812.00</td></tr>
+      <tr><td>Misc Fee</td><td>7,103.00</td></tr>
+      <tr><td>Other Charges</td><td>1,166.00</td></tr>
+      <tr class="total"><td>Total Payable</td><td>30,956.00</td></tr>
+    </table>
+    <p class="down">Required Down Payment: 9,000.00</p>
+  </section>
+
+  <p class="advised">Advised and printed by: <strong>JERWIN BUCANOG BANTIAN</strong></p>
+
+</body>
+</html>
