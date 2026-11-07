@@ -1,0 +1,1326 @@
+commit bd65f7b757490ed31690829f1aba52b658425f96
+Author:     bantianjerwin134 <bantianjerwin134@gmail.com>
+AuthorDate: 2026-11-07 03:48:03 +0000
+Commit:     bantianjerwin134 <bantianjerwin134@gmail.com>
+CommitDate: 2026-11-07 03:48:03 +0000
+
+    Add all project files
+
+diff --git a/Emmet.html/01basic.html b/Emmet.html/01basic.html
+new file mode 100644
+index 0000000..8aef166
+--- /dev/null
++++ b/Emmet.html/01basic.html
+@@ -0,0 +1,21 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Basic Emmet</title>
++</head>
++<body>
++    <h1>Welcome to My Web Page</h1>
++    <h2>About Me</h2>
++    <h2>My Hobbies</h2>
++    <p>I am a student.</p>
++    <p>I am learning HTML.</p>
++    <p>I am practicing Emmet.</p>
++    <div>This is a div.</div>
++    <header>This is the header.</header>
++    <nav>This is the navigation.</nav>
++    <main>This is the main content.</main>
++    <footer>This is the footer.</footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Emmet.html/02 classes-id.html b/Emmet.html/02 classes-id.html
+new file mode 100644
+index 0000000..0f902b0
+--- /dev/null
++++ b/Emmet.html/02 classes-id.html	
+@@ -0,0 +1,20 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Classes and IDs</title>
++</head>
++<body>
++    <p class="introduction">This is a paragraph with a class.</p>
++    <div id="container">This is a div with an ID.</div>
++    <div class="card featured">This div has two classes.</div>
++    <section id="about" class="content-section">This section has an ID and a class.</section>
++
++    <header class="site-header">This is the header.</header>
++    <nav id="main-nav">This is the navigation.</nav>
++    <main class="content">This is the main content.</main>
++    <section id="about">This is the about section.</section>
++    <footer class="site-footer">This is the footer.</footer>
++</body>
++</html>
+diff --git a/Emmet.html/03 navigation.html b/Emmet.html/03 navigation.html
+new file mode 100644
+index 0000000..755baf3
+--- /dev/null
++++ b/Emmet.html/03 navigation.html	
+@@ -0,0 +1,124 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Navigation</title>
++    <style>
++        body {
++            max-width: 700px;
++            margin: 0 auto;
++            padding: 30px 16px;
++            font-family: Arial, sans-serif;
++            line-height: 1.6;
++            color: #222;
++            background: #fff;
++        }
++
++        h1 { margin-top: 0; }
++
++        h2 {
++            margin-top: 32px;
++            padding-bottom: 6px;
++            border-bottom: 1px solid #ddd;
++        }
++
++        nav ul {
++            display: flex;
++            flex-wrap: wrap;
++            gap: 20px;
++            padding: 0;
++            list-style: none;
++        }
++
++        a { color: #222; }
++    </style>
++</head>
++<body>
++    <h1>Navigation Laboratory</h1>
++
++    <h2>Part 6: Numbering</h2>
++    <ul>
++        <li class="item1">Item 1: HTML</li>
++        <li class="item2">Item 2: CSS</li>
++        <li class="item3">Item 3: JavaScript</li>
++        <li class="item4">Item 4: PHP</li>
++        <li class="item5">Item 5: MySQL</li>
++    </ul>
++
++    <ul>
++        <li>Menu 1</li>
++        <li>Menu 2</li>
++        <li>Menu 3</li>
++        <li>Menu 4</li>
++        <li>Menu 5</li>
++    </ul>
++
++    <h2>Challenge: Navigation Menu</h2>
++    <nav>
++        <ul>
++            <li>Home</li>
++            <li>About</li>
++            <li>Services</li>
++            <li>Projects</li>
++            <li>Contact</li>
++        </ul>
++    </nav>
++
++    <h2>Part 7: Navigation Links</h2>
++    <nav>
++        <ul>
++            <li><a href="#home">Menu 1</a></li>
++            <li><a href="#about">Menu 2</a></li>
++            <li><a href="#portfolio">Menu 3</a></li>
++            <li><a href="#services">Menu 4</a></li>
++            <li><a href="#contact">Menu 5</a></li>
++        </ul>
++    </nav>
++
++    <h2>Part 7 Challenge: Navigation</h2>
++    <nav>
++        <ul>
++            <li><a href="#home">Home</a></li>
++            <li><a href="#about">About</a></li>
++            <li><a href="#portfolio">Portfolio</a></li>
++            <li><a href="#services">Services</a></li>
++            <li><a href="#contact">Contact</a></li>
++        </ul>
++    </nav>
++
++    <section id="home">
++        <h2>Home</h2>
++        <p>Welcome to my web technologies laboratory page. This page practices building navigation menus with Emmet.</p>
++    </section>
++
++    <section id="about">
++        <h2>About</h2>
++        <p>I am a student learning how websites work. I enjoy programming, photography, and gaming.</p>
++    </section>
++
++    <section id="portfolio">
++        <h2>Portfolio</h2>
++        <ul>
++            <li>Student registration form</li>
++            <li>Weekly class schedule</li>
++            <li>Personal profile page</li>
++        </ul>
++    </section>
++
++    <section id="services">
++        <h2>Services</h2>
++        <ul>
++            <li>Basic web page creation</li>
++            <li>Page layout with HTML and CSS</li>
++            <li>Form design</li>
++        </ul>
++    </section>
++
++    <section id="contact">
++        <h2>Contact</h2>
++        <p>Email: <a href="mailto:bantianjerwin134@gmail.com">bantianjerwin134@gmail.com</a></p>
++        <p>Location: Baguio, Philippines</p>
++    </section>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Emmet.html/04 form.html b/Emmet.html/04 form.html
+new file mode 100644
+index 0000000..23f152a
+--- /dev/null
++++ b/Emmet.html/04 form.html	
+@@ -0,0 +1,67 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Form</title>
++    <style>
++        body { max-width: 480px; margin: 30px auto; padding: 0 16px; font-family: Arial, sans-serif; }
++        div, fieldset { margin-bottom: 14px; }
++        label { display: block; font-weight: bold; margin-bottom: 4px; }
++        fieldset label { display: inline; font-weight: normal; margin-right: 12px; }
++        input[type="text"], input[type="email"], input[type="password"], select, textarea {
++            width: 100%; padding: 8px; box-sizing: border-box;
++        }
++    </style>
++</head>
++<body>
++    <h1>Student Registration Form</h1>
++    <form action="#" method="post">
++        <div>
++            <label for="sid">Student ID</label>
++            <input type="text" name="sid" id="sid" required>
++        </div>
++        <div>
++            <label for="fullname">Full Name</label>
++            <input type="text" name="fullname" id="fullname" required>
++        </div>
++        <div>
++            <label for="email">Email</label>
++            <input type="email" name="email" id="email" required>
++        </div>
++        <div>
++            <label for="pw">Password</label>
++            <input type="password" name="pw" id="pw" required>
++        </div>
++        <fieldset>
++            <legend>Gender</legend>
++            <input type="radio" name="gender" id="male" value="male" required>
++            <label for="male">Male</label>
++            <input type="radio" name="gender" id="female" value="female">
++            <label for="female">Female</label>
++        </fieldset>
++        <div>
++            <label for="course">Course</label>
++            <select name="course" id="course">
++                <option value="bsit">BSIT</option>
++                <option value="bscs">BSCS</option>
++                <option value="bsis">BSIS</option>
++            </select>
++        </div>
++        <fieldset>
++            <legend>Hobbies</legend>
++            <input type="checkbox" name="hobbies" id="reading" value="reading">
++            <label for="reading">Reading</label>
++            <input type="checkbox" name="hobbies" id="gaming" value="gaming">
++            <label for="gaming">Gaming</label>
++            <input type="checkbox" name="hobbies" id="music" value="music">
++            <label for="music">Music</label>
++        </fieldset>
++        <div>
++            <label for="address">Address</label>
++            <textarea name="address" id="address" rows="3"></textarea>
++        </div>
++        <input type="submit" value="Register">
++    </form>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Emmet.html/05 semantic.html b/Emmet.html/05 semantic.html
+new file mode 100644
+index 0000000..c34f152
+--- /dev/null
++++ b/Emmet.html/05 semantic.html	
+@@ -0,0 +1,43 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Semantic HTML</title>
++</head>
++<body>
++    <header>
++        <h1>My Web Development Journey</h1>
++        <p>Learning HTML, CSS, and JavaScript step by step.</p>
++    </header>
++
++    <nav>
++        <ul>
++            <li><a href="#">Home</a></li>
++            <li><a href="#">About</a></li>
++            <li><a href="#">Projects</a></li>
++            <li><a href="#">Contact</a></li>
++        </ul>
++    </nav>
++
++    <main>
++        <section>
++            <h2>Latest Post</h2>
++            <article>
++                <h3>Learning Emmet Shortcuts</h3>
++                <p>Emmet lets me write HTML faster by typing short abbreviations and pressing Tab.</p>
++                <p>Today I practiced classes, IDs, lists, forms, and semantic tags.</p>
++            </article>
++        </section>
++
++        <aside>
++            <h3>Quick Tip</h3>
++            <p>Type an abbreviation and press Tab to expand it.</p>
++        </aside>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 -JERWIN BANTIAN</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Emmet.html/index.html b/Emmet.html/index.html
+new file mode 100644
+index 0000000..4ae304c
+--- /dev/null
++++ b/Emmet.html/index.html
+@@ -0,0 +1,11 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Emmet</title>
++</head>
++<body>
++    <p>this is for practice</p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Emmet.html/profile.png b/Emmet.html/profile.png
+new file mode 100644
+index 0000000..884160e
+Binary files /dev/null and b/Emmet.html/profile.png differ
+diff --git a/school.png b/Emmet.html/school.png
+similarity index 100%
+rename from school.png
+rename to Emmet.html/school.png
+diff --git a/About.html b/LAB-HTML/About.html
+similarity index 100%
+rename from About.html
+rename to LAB-HTML/About.html
+diff --git a/README.md b/LAB-HTML/README.md
+similarity index 100%
+rename from README.md
+rename to LAB-HTML/README.md
+diff --git a/contact.html b/LAB-HTML/contact.html
+similarity index 100%
+rename from contact.html
+rename to LAB-HTML/contact.html
+diff --git a/formating.html b/LAB-HTML/formating.html
+similarity index 100%
+rename from formating.html
+rename to LAB-HTML/formating.html
+diff --git a/image.html b/LAB-HTML/image.html
+similarity index 100%
+rename from image.html
+rename to LAB-HTML/image.html
+diff --git a/LAB-HTML/index.html b/LAB-HTML/index.html
+new file mode 100644
+index 0000000..6e830fd
+--- /dev/null
++++ b/LAB-HTML/index.html
+@@ -0,0 +1,37 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Jerwin Bantian - My First Web Page</title>
++</head>
++<body>
++   <h1></h1>
++
++    <h1>MY PERSONAL PAGE</h1>
++    <hr>
++
++    <h2>Jerwin Bantian</h2>
++    <p><strong>Bachelor of Science in Information Technology</strong></p>
++
++    <h2>About Me</h2>
++    <p>Hello! My name is Jerwin Bantian and I am an IT student. I am taking Web Technologies, where I am learning how websites are made.</p>
++    <p>This is my very first web page. I made it using HTML in Visual Studio Code and tested it in my browser.</p>
++    <p>My goal is to become a web developer who builds websites that are useful and easy to use.</p>
++
++    <hr>
++
++    <h2>My Hobbies</h2>
++    <p>These are three things I enjoy doing:</p>
++    <ul>
++        <li>Programming</li>
++        <li>Photography</li>
++        <li>Gaming</li>
++    </ul>
++
++    <hr>
++
++    <h2>Closing</h2>
++    <p>Thank you for taking the time to visit my page. I will keep practicing and improving with every activity.</p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/LAB-HTML/links.html b/LAB-HTML/links.html
+new file mode 100644
+index 0000000..2406266
+--- /dev/null
++++ b/LAB-HTML/links.html
+@@ -0,0 +1,41 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Links and Navigation</title>
++</head>
++<body>
++    <h1 id="top">Links and Navigation</h1>
++
++    <nav>
++        <a href="index.html">HOME</a> |
++        <a href="about.html">ABOUT</a> |
++        <a href="contact.html">CONTACT</a>
++    </nav>
++    <hr>
++
++    <h2>External Links (open in a new tab)</h2>
++    <ul>
++        <li><a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Google</a></li>
++        <li><a href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">YouTube</a></li>
++        <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
++        <li><a href="https://www.bing.com/ck/a?!&&p=646b5091be9a28c0a2406755dd31d1ad4e4631a684d7436917f21d3f6caceb1fJmltdHM9MTc5MzkyMzIwMA&ptn=3&ver=2&hsh=4&fclid=12ddb94c-585f-66bf-1f2b-ae8659796763&u=a1aHR0cHM6Ly91Yy1iY2YuZWR1LnBoLw" target="_blank" rel="noopener noreferrer">My School Website</a></li>
++    </ul>
++
++    <h2>Jump Links</h2>
++    <p><a href="#section1">Go to Section 1</a> | <a href="#section2">Go to Section 2</a></p>
++
++    <section id="section1">
++        <h2>Section 1</h2>
++        <p>This is Section 1. A link jumps here using <code>id="section1"</code> and <code>href="#section1"</code>.</p>
++        <p>Extra text so the page is long enough to scroll.</p>
++        <p>More text to scroll past.</p>
++    </section>
++
++    <section id="section2">
++        <h2>Section 2</h2>
++        <p>This is Section 2.</p>
++        <p><a href="#top">Back to top</a></p>
++    </section>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/LAB-HTML/list.html b/LAB-HTML/list.html
+new file mode 100644
+index 0000000..b7f0f26
+--- /dev/null
++++ b/LAB-HTML/list.html
+@@ -0,0 +1,45 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Lists</title>
++</head>
++<body>
++  <h1>A. Favorite Foods</h1>
++  <ul>
++    <li>Pizza</li>
++    <li>Burger</li>
++    <li>Sushi</li>
++    <li>Tacos</li>
++    <li>Pasta</li>
++  </ul>
++
++  <h1>B. Top 5 Programming Languages</h1>
++  <ol>
++    <li>JavaScript</li>
++    <li>Python</li>
++    <li>Java</li>
++    <li>PHP</li>
++    <li>C#</li>
++  </ol>
++
++  <h1>C. Computer Science</h1>
++  <ul>
++    <li>Programming
++      <ul>
++        <li>Java</li>
++        <li>Python</li>
++        <li>PHP</li>
++      </ul>
++    </li>
++    <li>Web Development
++      <ul>
++        <li>HTML</li>
++        <li>CSS</li>
++        <li>JavaScript</li>
++      </ul>
++    </li>
++  </ul>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/LAB-HTML/multimedia.html b/LAB-HTML/multimedia.html
+new file mode 100644
+index 0000000..893cf77
+--- /dev/null
++++ b/LAB-HTML/multimedia.html
+@@ -0,0 +1,47 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Multimedia</title>
++</head>
++<body>
++
++    <h1>Multimedia</h1>
++    <p><a href="index.html">Back to Home</a></p>
++    <hr>
++
++    <h2>Image</h2>
++    <img src="school.png" alt="My school" width="300">
++
++    <h2>Audio</h2>
++    <img src="audiobook-cover.jpg" alt="Audiobook cover" width="200">
++    <br>
++    <audio controls>
++        <source src="audio.mp3" type="audio/mpeg">
++        Your browser does not support the audio element.
++    </audio>
++
++    <h2>Video</h2>
++    <video controls width="480">
++        <source src="demo.mp4" type="video/mp4">
++        Your browser does not support the video element.
++    </video>
++    <p>
++        <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank" rel="noopener noreferrer">
++            <img src="https://img.youtube.com/vi/qz0aGYrrlhU/hqdefault.jpg"
++                 alt="Thumbnail: HTML Crash Course for Absolute Beginners" width="320">
++            <br>
++            Watch this video on YouTube
++        </a>
++    </p>
++
++    <h2>Embedded Educational Video</h2>
++    <iframe width="560" height="315"
++        src="https://www.youtube.com/embed/qz0aGYrrlhU"
++        title="HTML Crash Course for Absolute Beginners"
++        allowfullscreen>
++    </iframe>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/LAB-HTML/profile.png b/LAB-HTML/profile.png
+new file mode 100644
+index 0000000..884160e
+Binary files /dev/null and b/LAB-HTML/profile.png differ
+diff --git a/LAB-HTML/registration.html b/LAB-HTML/registration.html
+new file mode 100644
+index 0000000..893cf77
+--- /dev/null
++++ b/LAB-HTML/registration.html
+@@ -0,0 +1,47 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Multimedia</title>
++</head>
++<body>
++
++    <h1>Multimedia</h1>
++    <p><a href="index.html">Back to Home</a></p>
++    <hr>
++
++    <h2>Image</h2>
++    <img src="school.png" alt="My school" width="300">
++
++    <h2>Audio</h2>
++    <img src="audiobook-cover.jpg" alt="Audiobook cover" width="200">
++    <br>
++    <audio controls>
++        <source src="audio.mp3" type="audio/mpeg">
++        Your browser does not support the audio element.
++    </audio>
++
++    <h2>Video</h2>
++    <video controls width="480">
++        <source src="demo.mp4" type="video/mp4">
++        Your browser does not support the video element.
++    </video>
++    <p>
++        <a href="https://www.youtube.com/watch?v=qz0aGYrrlhU" target="_blank" rel="noopener noreferrer">
++            <img src="https://img.youtube.com/vi/qz0aGYrrlhU/hqdefault.jpg"
++                 alt="Thumbnail: HTML Crash Course for Absolute Beginners" width="320">
++            <br>
++            Watch this video on YouTube
++        </a>
++    </p>
++
++    <h2>Embedded Educational Video</h2>
++    <iframe width="560" height="315"
++        src="https://www.youtube.com/embed/qz0aGYrrlhU"
++        title="HTML Crash Course for Absolute Beginners"
++        allowfullscreen>
++    </iframe>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/LAB-HTML/reschedule.html b/LAB-HTML/reschedule.html
+new file mode 100644
+index 0000000..52662d8
+--- /dev/null
++++ b/LAB-HTML/reschedule.html
+@@ -0,0 +1,175 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Student Enrolment Load</title>
++  <style>
++    body {
++      font-family: Arial, sans-serif;
++      font-size: 14px;
++      color: #111;
++      margin: 24px auto;
++      padding: 0 16px;
++      max-width: 1000px;
++    }
++
++    header { text-align: center; }
++    header h1 { margin: 0; font-size: 20px; }
++    header p { margin: 2px 0 0; font-size: 13px; }
++
++    .printed { text-align: right; font-size: 13px; margin: 10px 0 18px; }
++
++    .info {
++      display: grid;
++      grid-template-columns: 1fr 1fr;
++      gap: 10px 30px;
++      margin-bottom: 18px;
++    }
++    .info p { margin: 0; }
++    .big { font-size: 17px; font-weight: bold; }
++    .sig { border-bottom: 1px solid #111; display: inline-block; width: 240px; }
++
++    .units { display: flex; flex-wrap: wrap; gap: 6px 60px; margin: 0 0 8px 10px; }
++
++    .scroll { overflow-x: auto; }
++
++    table { width: 100%; border-collapse: collapse; }
++    th, td { border: 1px solid #111; padding: 4px 6px; text-align: left; vertical-align: middle; }
++    th { text-transform: uppercase; font-size: 12px; }
++    .num { text-align: center; }
++
++    .fees {
++      display: flex;
++      flex-wrap: wrap;
++      justify-content: space-between;
++      align-items: flex-start;
++      gap: 20px;
++      margin-top: 28px;
++    }
++    .fees table { width: 320px; }
++    .fees td { border: 0; padding: 5px 8px; }
++    .fees td:last-child { text-align: right; font-weight: bold; }
++    .fees tr.total td:first-child { text-align: right; font-weight: normal; }
++
++    .down { font-size: 17px; text-decoration: underline; margin-top: 12px; }
++
++    .advised { margin-top: 36px; }
++    .advised strong { margin-left: 40px; text-decoration: underline; }
++
++    @media (max-width: 600px) {
++      .info { grid-template-columns: 1fr; }
++    }
++  </style>
++</head>
++<body>
++
++  <header>
++    <h1>STUDENT ENROLMENT LOAD</h1>
++    <p>1st Sem, AY 2026-2027</p>
++  </header>
++
++  <p class="printed">Date and time printed: <strong>2026-8-25 11:31:45</strong></p>
++
++  <section class="info">
++    <p>Student ID: <span class="big">25-0574-693</span></p>
++    <p>Course / Major: <strong>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY / Web Technology Track</strong></p>
++
++    <p>Student name: <span class="big">BANTIAN, JERWIN BUCANOG</span></p>
++    <p>Curriculum Year: <strong>2025 - 2026</strong></p>
++
++    <p>Student type: <strong>Change Course</strong></p>
++    <p>Year: <strong>2</strong></p>
++
++    <p>Student's Signature: <span class="sig"></span></p>
++    <p>Parent's Signature: <span class="sig"></span></p>
++  </section>
++
++  <div class="units">
++    <span>Maximum units the student can take: <strong>20.0</strong></span>
++    <span>Total student load taken: <strong>17.0</strong></span>
++  </div>
++
++  <div class="scroll">
++    <table>
++      <thead>
++        <tr>
++          <th>Subject code</th>
++          <th>Subject title</th>
++          <th class="num">Lec. units</th>
++          <th class="num">Lab. units</th>
++          <th class="num">Total units</th>
++          <th class="num">Units taken</th>
++          <th>Section</th>
++          <th>Room</th>
++          <th>Schedule</th>
++        </tr>
++      </thead>
++      <tbody>
++        <tr>
++          <td>CC5</td>
++          <td>INFORMATION MANAGEMENT</td>
++          <td class="num">2.0</td><td class="num">1.0</td><td class="num">3.0</td><td class="num">3.0</td>
++          <td>CITCS 2E Group B</td>
++          <td>FLD<br>M306 (lab)</td>
++          <td>MW 12:50PM-2:10PM<br>MWF 11:30AM-12:50PM (lab)</td>
++        </tr>
++        <tr>
++          <td>PATHFit 4</td>
++          <td>OUTDOOR AND ADVENTURE ACTIVITIES</td>
++          <td class="num">2.0</td><td class="num">0.0</td><td class="num">2.0</td><td class="num">2.0</td>
++          <td>CITCS 2K Group B</td>
++          <td>Gym</td>
++          <td>MW 3:30PM-4:50PM</td>
++        </tr>
++        <tr>
++          <td>SCIENCE 100</td>
++          <td>SCIENCE, TECHNOLOGY AND SOCIETY</td>
++          <td class="num">3.0</td><td class="num">0.0</td><td class="num">3.0</td><td class="num">3.0</td>
++          <td>CITCS 2K Group B</td>
++          <td>S230</td>
++          <td>MWF 8:50AM-10:10AM</td>
++        </tr>
++        <tr>
++          <td>SOC SCI 101N</td>
++          <td>ETHICS</td>
++          <td class="num">3.0</td><td class="num">0.0</td><td class="num">3.0</td><td class="num">3.0</td>
++          <td>CITCS 2F Group B</td>
++          <td>FLD</td>
++          <td>TTHSAT 10:10AM-11:30AM</td>
++        </tr>
++        <tr>
++          <td>CIT14</td>
++          <td>WEB TECHNOLOGIES</td>
++          <td class="num">2.0</td><td class="num">1.0</td><td class="num">3.0</td><td class="num">3.0</td>
++          <td>CITCS 2G Group A</td>
++          <td>FLD<br>M307 (lab)</td>
++          <td>TTH 7:30AM-8:50AM<br>TTHSAT 8:50AM-10:10AM (lab)</td>
++        </tr>
++        <tr>
++          <td>SOC SCI 103N</td>
++          <td>THE CONTEMPORARY WORLD</td>
++          <td class="num">3.0</td><td class="num">0.0</td><td class="num">3.0</td><td class="num">3.0</td>
++          <td>AR II-1C-F</td>
++          <td>S321</td>
++          <td>TTHSAT 11:30AM-12:50PM</td>
++        </tr>
++      </tbody>
++    </table>
++  </div>
++
++  <section class="fees">
++    <table>
++      <tr><td>Tuition Fee</td><td>14,875.00</td></tr>
++      <tr><td>Computer Lab Fee</td><td>7,812.00</td></tr>
++      <tr><td>Misc Fee</td><td>7,103.00</td></tr>
++      <tr><td>Other Charges</td><td>1,166.00</td></tr>
++      <tr class="total"><td>Total Payable</td><td>30,956.00</td></tr>
++    </table>
++    <p class="down">Required Down Payment: 9,000.00</p>
++  </section>
++
++  <p class="advised">Advised and printed by: <strong>JERWIN BUCANOG BANTIAN</strong></p>
++
++</body>
++</html>
+\ No newline at end of file
+diff --git a/LAB-HTML/school.png b/LAB-HTML/school.png
+new file mode 100644
+index 0000000..2b2c9db
+Binary files /dev/null and b/LAB-HTML/school.png differ
+diff --git a/LAB-HTML/sematic.html b/LAB-HTML/sematic.html
+new file mode 100644
+index 0000000..ce1fc2d
+--- /dev/null
++++ b/LAB-HTML/sematic.html
+@@ -0,0 +1,58 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>The Importance of Web Development Skills</title>
++</head>
++<body>
++  <header>
++    <h1>Web Development Skills</h1>
++    <p>Why learning web development matters</p>
++  </header>
++
++  <nav>
++    <a href="#article">Article</a> |
++    <a href="#resources">Resources</a>
++  </nav>
++
++  <main>
++    <section>
++      <article id="article">
++        <h2>The Importance of Web Development Skills</h2>
++        <p>
++          Web development skills help people create websites and applications
++          that share information and connect communities.
++        </p>
++
++        <h3>Useful skills</h3>
++        <p>
++          HTML structures web pages, CSS styles them, and JavaScript adds
++          interactive features. Together, these tools help turn ideas into
++          useful websites.
++        </p>
++
++        <h3>More opportunities</h3>
++        <p>
++          Learning web development can lead to opportunities in technology,
++          design, education, and business. It also builds problem-solving
++          skills.
++        </p>
++      </article>
++
++      <aside id="resources">
++        <h2>Quick Tips</h2>
++        <ul>
++          <li>Practice regularly.</li>
++          <li>Build small projects.</li>
++          <li>Make websites accessible.</li>
++        </ul>
++      </aside>
++    </section>
++  </main>
++
++  <footer>
++    <p>&copy; 2026 Web Development Learning Page</p>
++  </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/MY portfolio/about.html b/MY portfolio/about.html
+new file mode 100644
+index 0000000..e69de29
+diff --git a/MY portfolio/contact.html b/MY portfolio/contact.html
+new file mode 100644
+index 0000000..49b026c
+--- /dev/null
++++ b/MY portfolio/contact.html	
+@@ -0,0 +1,50 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Contact - Jerwin Bantian</title>
++    <link rel="stylesheet" href="style.css">
++</head>
++<body>
++    <header>
++        <h1>JERWIN BANTIAN</h1>
++        <nav>
++            <a href="index.html">HOME</a> |
++            <a href="about.html">ABOUT</a> |
++            <a href="education.html">EDUCATION</a> |
++            <a href="skills.html">SKILLS</a> |
++            <a href="contact.html">CONTACT</a>
++        </nav>
++    </header>
++
++    <main>
++        <section>
++            <h2>Contact Me</h2>
++            <p>Want to ask a question or work together? Send me a message.</p>
++            <form action="#" method="post">
++                <label for="name">Name</label>
++                <input type="text" id="name" name="name" placeholder="Your full name" required>
++
++                <label for="email">Email</label>
++                <input type="email" id="email" name="email" placeholder="you@example.com" required>
++
++                <label for="subject">Subject</label>
++                <input type="text" id="subject" name="subject" placeholder="What is this about?">
++
++                <label for="message">Message</label>
++                <textarea id="message" name="message" rows="5" placeholder="Write your message here" required></textarea>
++
++                <p>
++                    <input type="submit" value="Send Message">
++                    <input type="reset" value="Reset">
++                </p>
++            </form>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 Jerwin Bantian</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/MY portfolio/education.html b/MY portfolio/education.html
+new file mode 100644
+index 0000000..2527dbc
+--- /dev/null
++++ b/MY portfolio/education.html	
+@@ -0,0 +1,55 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Education - Jerwin Bantian</title>
++    <link rel="stylesheet" href="style.css">
++</head>
++<body>
++    <header>
++        <h1>JERWIN BANTIAN</h1>
++        <nav>
++            <a href="index.html">HOME</a> |
++            <a href="about.html">ABOUT</a> |
++            <a href="education.html">EDUCATION</a> |
++            <a href="skills.html">SKILLS</a> |
++            <a href="contact.html">CONTACT</a>
++        </nav>
++    </header>
++
++    <main>
++        <section>
++            <h2>Education</h2>
++
++            <article>
++                <h3>College</h3>
++                <img src="school.png" alt="My school" width="250">
++                <p>Bachelor of Science in Information Technology (ongoing). Current course: Web Technologies.</p>
++            </article>
++
++            <article>
++                <h3>Earlier Education</h3>
++                <ul>
++                    <li>Senior High School: Science, Technology, Engineering, and Mathematics</li>
++                    <li>Junior High School: King's College of the Philippines</li>
++                    <li>Elemetary:Star</li>
++                    <li>Preschool:Benguet State University</li>
++                </ul>
++            </article>
++
++            <article>
++                <h3>Embedded Lesson</h3>
++                <iframe width="560" height="315"
++                    src="hhttps://www.google.com/goto?url=CAESYwHrOzAVKRu5Mhajt3uC3uGWUAlsyW9p4YC1QIkf3uW2PsmD83gMcoJ1inwvqa7_Z_AuB193q4qFxvunYRzWAyiF9zzG4tQHN_r_1dCDZPFKE8AcNF24Fc4RAF0VJb6O0oZOwg"
++                    title="HTML Crash Course for Absolute Beginners"
++                    allowfullscreen></iframe>
++            </article>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 Jerwin Bantian</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/MY portfolio/hobby.png b/MY portfolio/hobby.png
+new file mode 100644
+index 0000000..53f0e24
+Binary files /dev/null and b/MY portfolio/hobby.png differ
+diff --git a/MY portfolio/index.html b/MY portfolio/index.html
+new file mode 100644
+index 0000000..f9f7d6b
+--- /dev/null
++++ b/MY portfolio/index.html	
+@@ -0,0 +1,45 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Home - Jerwin Bantian</title>
++    <link rel="stylesheet" href="style.css">
++</head>
++<body>
++    <header>
++        <h1>JERWIN BANTIAN</h1>
++        <nav>
++            <a href="index.html">HOME</a> |
++            <a href="about.html">ABOUT</a> |
++            <a href="education.html">EDUCATION</a> |
++            <a href="skills.html">SKILLS</a> |
++            <a href="contact.html">CONTACT</a>
++        </nav>
++    </header>
++
++    <main>
++        <section>
++            <h2>Welcome to My Web Portfolio</h2>
++            <img src="images/profile.png" alt="Profile photo of Jerwin Bantian" width="220">
++            <p>Hello! I am Jerwin Bantian, an Information Technology student and aspiring full-stack web developer.</p>
++            <p>Learn more <a href="about.html">about me</a>, see my <a href="education.html">education</a>, or check my <a href="skills.html">skills</a>.</p>
++        </section>
++
++        <section>
++            <article>
++                <h2>Project Demo</h2>
++                <video controls width="640">
++                    <source src="media/demo.mp4" type="video/mp4">
++                    Your browser does not support the video element.
++                </video>
++                <p>A short video demo of my work.</p>
++            </article>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 Jerwin Bantian</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/MY portfolio/profile.png b/MY portfolio/profile.png
+new file mode 100644
+index 0000000..884160e
+Binary files /dev/null and b/MY portfolio/profile.png differ
+diff --git a/MY portfolio/school.png b/MY portfolio/school.png
+new file mode 100644
+index 0000000..2b2c9db
+Binary files /dev/null and b/MY portfolio/school.png differ
+diff --git a/MY portfolio/skills.html b/MY portfolio/skills.html
+new file mode 100644
+index 0000000..b3848c5
+--- /dev/null
++++ b/MY portfolio/skills.html	
+@@ -0,0 +1,45 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>Skills - Jerwin Bantian</title>
++    <link rel="stylesheet" href="style.css">
++</head>
++<body>
++    <header>
++        <h1>JERWIN BANTIAN</h1>
++        <nav>
++            <a href="index.html">HOME</a> |
++            <a href="about.html">ABOUT</a> |
++            <a href="education.html">EDUCATION</a> |
++            <a href="skills.html">SKILLS</a> |
++            <a href="contact.html">CONTACT</a>
++        </nav>
++    </header>
++
++    <main>
++        <section>
++            <h2>My Skills</h2>
++            <table>
++                <caption>Skill Summary</caption>
++                <tr>
++                    <th>Skill</th>
++                    <th>Level</th>
++                    <th>Experience</th>
++                </tr>
++                <tr><td>HTML</td><td>Beginner</td><td>1 month</td></tr>
++                <tr><td>CSS</td><td>Beginner</td><td>1 month</td></tr>
++                <tr><td>JavaScript</td><td>Beginner</td><td>1 month</td></tr>
++                <tr><td>PHP</td><td>Beginner</td><td>1 month</td></tr>
++                <tr><td>MySQL</td><td>Beginner</td><td>1 month</td></tr>
++                <tr><td>Git / GitHub</td><td>Beginner</td><td>1 month</td></tr>
++            </table>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 Jerwin Bantian</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+
+commit b5571e4a8f75dba42c6f332f7eaede183f8f495c
+Author:     bantianjerwin134 <bantianjerwin134@gmail.com>
+AuthorDate: 2026-11-07 02:46:21 +0000
+Commit:     bantianjerwin134 <bantianjerwin134@gmail.com>
+CommitDate: 2026-11-07 02:46:21 +0000
+
+    Add all project files
+
+diff --git a/formating.html b/formating.html
+index e69de29..2b31b0b 100644
+--- a/formating.html
++++ b/formating.html
+@@ -0,0 +1,30 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>HTML Text Formatting</title>
++</head>
++<body>
++    <h1>HTML Text Formatting</h1>
++    <p><strong>HTML</strong> stands for <em>HyperText Markup Language</em>.</p>
++    <hr>
++
++    <h2>Tag Explanations</h2>
++    <p>The <code>&lt;b&gt;</code> tag makes text <b>bold</b>.</p>
++    <p>The <code>&lt;strong&gt;</code> tag shows <strong>strong importance</strong>.</p>
++    <p>The <code>&lt;i&gt;</code> tag makes text <i>italic</i>.</p>
++    <p>The <code>&lt;em&gt;</code> tag <em>emphasizes</em> text.</p>
++    <p>The <code>&lt;u&gt;</code> tag <u>underlines</u> text.</p>
++    <p>The <code>&lt;mark&gt;</code> tag <mark>highlights</mark> text.</p>
++    <p>The <code>&lt;small&gt;</code> tag makes text <small>smaller</small>.</p>
++    <p>The <code>&lt;del&gt;</code> tag shows <del>deleted</del> text.</p>
++    <p>The <code>&lt;ins&gt;</code> tag shows <ins>inserted</ins> text.</p>
++    <p>The <code>&lt;sub&gt;</code> tag lowers text, as in H<sub>2</sub>O.</p>
++    <p>The <code>&lt;sup&gt;</code> tag raises text, as in 10<sup>2</sup>.</p>
++    <hr>
++
++    <h2>Challenge</h2>
++    <p>H<sub>2</sub>O</p>
++    <p>E = mc<sup>2</sup></p>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/image.html b/image.html
+new file mode 100644
+index 0000000..0f88e2a
+--- /dev/null
++++ b/image.html
+@@ -0,0 +1,23 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <title>Images</title>
++</head>
++<body>
++    <h1>Personal Profile</h1>
++    <p><a href="index.html">Back to Home</a></p>
++
++    <section>
++        <img src="profile.png" alt="Profile photo" width="200" height="200">
++        <h2>Jerwin Bantian</h2>
++        <p>I am an IT student who is learning web development.</p>
++    </section>
++
++    <h2>Challenge: Clickable Image</h2>
++    <p>Click the image to open another webpage:</p>
++    <a href="about.html">
++        <img src="school.png" alt="Click to open the About page" width="200" height="200">
++    </a>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Screenshot 2026-10-10 062016.png b/school.png
+similarity index 100%
+rename from Screenshot 2026-10-10 062016.png
+rename to school.png
+
+commit 1f55838cfcb9ce21a29c9f371f58e90d0880688f
+Author:     bantianjerwin134 <bantianjerwin134@gmail.com>
+AuthorDate: 2026-11-07 02:41:37 +0000
+Commit:     bantianjerwin134 <bantianjerwin134@gmail.com>
+CommitDate: 2026-11-07 02:41:37 +0000
+
+    Add all project files
+
+diff --git a/About.html b/About.html
+new file mode 100644
+index 0000000..8fee573
+--- /dev/null
++++ b/About.html
+@@ -0,0 +1,62 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++    <meta charset="UTF-8">
++    <meta name="viewport" content="width=device-width, initial-scale=1.0">
++    <title>About - Jerwin Bantian</title>
++    <link rel="stylesheet" href="style.css">
++</head>
++<body>
++    <header>
++        <h1>JERWIN BANTIAN</h1>
++        <nav>
++            <a href="index.html">HOME</a> |
++            <a href="about.html">ABOUT</a> |
++            <a href="education.html">EDUCATION</a> |
++            <a href="skills.html">SKILLS</a> |
++            <a href="contact.html">CONTACT</a>
++        </nav>
++    </header>
++
++    <main>
++        <section>
++            <h2>About Me</h2>
++            <img src="images/hobby.jpg" alt="Me enjoying my hobby" width="200" height="200">
++            <p>I enjoy building simple web pages and learning how websites work from the inside. I want to keep growing until I can build complete web applications.</p>
++        </section>
++
++        <section>
++            <article>
++                <h3>My Hobbies</h3>
++                <ul>
++                    <li>Programming</li>
++                    <li>Photography</li>
++                    <li>Gaming</li>
++                </ul>
++            </article>
++
++            <article>
++                <h3>My Career Goals</h3>
++                <ol>
++                    <li>Master HTML, CSS and JavaScript.</li>
++                    <li>Learn server-side programming with PHP and MySQL.</li>
++                    <li>Become a full-stack web developer.</li>
++                </ol>
++            </article>
++
++            <article>
++                <h3>Useful Links</h3>
++                <ul>
++                    <li><a href="https://developer.mozilla.org" target="_blank" rel="noopener noreferrer">MDN Web Docs</a></li>
++                    <li><a href="https://www.w3schools.com" target="_blank" rel="noopener noreferrer">W3Schools</a></li>
++                    <li><a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a></li>
++                </ul>
++            </article>
++        </section>
++    </main>
++
++    <footer>
++        <p>&copy; 2026 Jerwin Bantian</p>
++    </footer>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/Screenshot 2026-10-10 062016.png b/Screenshot 2026-10-10 062016.png
+new file mode 100644
+index 0000000..2b2c9db
+Binary files /dev/null and b/Screenshot 2026-10-10 062016.png differ
+diff --git a/contact.html b/contact.html
+new file mode 100644
+index 0000000..4bc6a15
+--- /dev/null
++++ b/contact.html
+@@ -0,0 +1,30 @@
++<!DOCTYPE html>
++<html lang="en">
++<head>
++  <meta charset="UTF-8">
++  <meta name="viewport" content="width=device-width, initial-scale=1.0">
++  <title>Contact - Jerwin Bantian</title>
++  <link rel="stylesheet" href="style.css">
++</head>
++<body>
++  <nav>
++    <a href="index.html">HOME</a> |
++    <a href="about.html">ABOUT</a> |
++    <a href="education.html">EDUCATION</a> |
++    <a href="skills.html">SKILLS</a> |
++    <a href="contact.html">CONTACT</a>
++  </nav>
++
++  <h1>Contact</h1>
++  <p>Feel free to reach out to me through any of the details below.</p>
++
++  <ul>
++    <li><strong>Name:</strong> Jerwin Bantian</li>
++    <li><strong>Location:</strong> Baguio, Philippines</li>
++    <li><strong>Status:</strong> Student</li>
++    <li><strong>Phone:</strong> <a href="tel:09060017804">0906 001 7804</a></li>
++    <li><strong>Email:</strong> <a href="mailto:jerwinbantian134@gmail.com">jerwinbantian134@gmail.com</a></li>
++    <li><strong>GitHub:</strong> <a href="https://github.com/jerwinbantian134-lgtm" target="_blank" rel="noopener noreferrer">jerwinbantian134-lgtm</a></li>
++  </ul>
++</body>
++</html>
+\ No newline at end of file
+diff --git a/formating.html b/formating.html
+new file mode 100644
+index 0000000..e69de29
+
+commit 1e8360b7353566916fc3fd7f4e06e8dea3caff48
+Author:     JERYLL <jerwinbantian134@gmail.com>
+AuthorDate: 2026-09-24 09:17:01 +0800
+Commit:     GitHub <noreply@github.com>
+CommitDate: 2026-09-24 09:17:01 +0800
+
+    Initial commit
+
+diff --git a/README.md b/README.md
+new file mode 100644
+index 0000000..516ad0e
+--- /dev/null
++++ b/README.md
+@@ -0,0 +1 @@
++# Web-tech
+\ No newline at end of file
